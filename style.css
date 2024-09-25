@@ -1,3 +1,92 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgray;
+}
+.header {
+  height: 20px;
+  background-color: #7d8300;
+  border-bottom: 2px solid black;
+}
+.border {
+  border: 2px solid black;
+}
+/* Default layout (for small screens < 583px) */
+.container {
+  max-width: 132px;
+  background-color: #0c8300;
+  border: 2px solid black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.squares-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 32px;
+  margin-bottom: 50px;
+  transform: rotate(135deg);
+  margin-left: 5px;
+}
+
+.square {
+  width: 43px;
+  height: 43px;
+  background-color: #f81d15;
+}
+.small-rectangles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.small-rectangle {
+  width: 40px;
+  height: 7px;
+  background-color: #1d0be8;
+}
+.items-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.circle {
+  width: 38px;
+  height: 35px;
+  background-color: #1e7f80;
+  border-radius: 50%;
+}
+
+.abc-rectangle {
+  background-color: #210dfe;
+  color: black;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 68px;
+  height: 150px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Medium screens (583px - 900px) */
+@media (min-width: 583px) and (max-width: 900px) {
+}
+
+/* Large screens (> 900px) */
+@media (min-width: 900px) {
 }
