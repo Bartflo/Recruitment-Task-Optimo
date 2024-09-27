@@ -9,7 +9,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: lightgray;
 }
 .header {
   height: 20px;
@@ -21,7 +20,7 @@ body {
 }
 /* Default layout (for small screens < 583px) */
 .container {
-  max-width: 132px;
+  width: 132px;
   background-color: #0c8300;
   border: 2px solid black;
 }
@@ -33,7 +32,7 @@ body {
   padding-right: 20px;
 }
 
-.squares-group {
+.rotated-squares {
   display: flex;
   gap: 15px;
   margin-top: 32px;
@@ -47,7 +46,7 @@ body {
   height: 43px;
   background-color: #f81d15;
 }
-.small-rectangles {
+.thin-rectangles {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -62,6 +61,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: 5px;
 }
 .circle {
   width: 38px;
@@ -85,8 +85,57 @@ body {
 
 /* Medium screens (583px - 900px) */
 @media (min-width: 583px) and (max-width: 900px) {
+  .container {
+    width: 240px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 10px 10px 5px;
+  }
+
+  .rotated-squares {
+    margin-top: 20px;
+    margin-left: -5px;
+  }
+  .items-group {
+    gap: 15px;
+    margin-left: 0px;
+  }
+  .abc-rectangle {
+    background-color: #bf3a3c;
+  }
 }
 
 /* Large screens (> 900px) */
-@media (min-width: 900px) {
+@media (min-width: 901px) {
+  .container {
+    width: 370px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px 7px 5px 6px;
+  }
+
+  .abc-rectangle {
+    background-color: #ffffff;
+  }
+  .rotated-squares {
+    margin-top: 25px;
+    margin-left: -5px;
+  }
+  .items-group {
+    margin-left: 50px;
+    margin-top: -25px;
+  }
+  .square-rectangles-group {
+    display: flex;
+  }
 }
