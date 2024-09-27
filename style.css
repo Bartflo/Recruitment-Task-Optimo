@@ -68,6 +68,20 @@ body {
   height: 35px;
   background-color: #1e7f80;
   border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.circle:hover {
+  animation: bounce 1s infinite;
 }
 
 .abc-rectangle {
